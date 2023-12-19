@@ -3,8 +3,8 @@ import mysql.connector
 # Establish a connection to the MySQL database
 connection = mysql.connector.connect(
     host="localhost",
-    user="",
-    password="",
+    user="user",
+    password="password",
     database="DB"
 )
 
@@ -12,7 +12,7 @@ connection = mysql.connector.connect(
 cursor = connection.cursor()
 
 # Define your SQL query to retrieve data
-query = "SELECT * FROM table1"
+query = "SELECT * FROM table"
 
 # Execute the query
 cursor.execute(query)
