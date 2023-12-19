@@ -10,7 +10,7 @@ connection = mysql.connector.connect(
 
 # Create a cursor object to interact with the database
 cursor = connection.cursor()
-
+    
 # Define your SQL query to retrieve data
 query = "SELECT * FROM table"
 
