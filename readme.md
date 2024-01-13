@@ -9,3 +9,10 @@ docker-compose – This command is used to manage multi-container Docker applica
 
 docker run --name container_name -dit image_name
 docker exec -it container_name /bin/sh
+
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+docker run -d --name Testdb  -p 5432:5432 -e POSTGRES_PASSWORD=pass123 arm64v8/postgres
+docker run -d --name postgresCont -p 5432:5432 -e POSTGRES_PASSWORD=pass123 postgres
+docker exec -it postgresCont bash
+psql -h localhost -U postgres
