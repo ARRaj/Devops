@@ -8,3 +8,4 @@ docker exec – This command is used to execute a command in a running container
 docker-compose – This command is used to manage multi-container Docker applications.
 
 docker run --name alpy -dit alpine
+docker exec -it myalpine /bin/sh
