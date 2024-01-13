@@ -6,3 +6,5 @@ docker images – This command is used to list all the Docker images that are cu
 docker pull – This command is used to download a Docker image from a registry.
 docker exec – This command is used to execute a command in a running container.
 docker-compose – This command is used to manage multi-container Docker applications.
+
+docker run --name alpy -dit alpine
